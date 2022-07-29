@@ -5,7 +5,7 @@
 #_user_info_available_at:https://vlab.ncep.noaa.gov/group/stock-synthesis
 #C this is an example control file setup																	
 #_data_and_control_files: data.dat // control.dat
-0  # 0 means do not read wtatage.ss; 1 means read and use wtatage.ss and also read and use growth parameters
+1  # 0 means do not read wtatage.ss; 1 means read and use wtatage.ss and also read and use growth parameters
 1  #_N_Growth_Patterns
 1 #_N_platoons_Within_GrowthPattern 
 #_Cond 1 #_Morph_between/within_stdev_ratio (no read if N_morphs=1)
@@ -40,7 +40,7 @@
 0 #_natM_type:_0=1Parm; 1=N_breakpoints;_2=Lorenzen;_3=agespecific;_4=agespec_withseasinterpolate
   #_no additional input for selected M option; read 1P per morph
 1 # GrowthModel: 1=vonBert with L1&L2; 2=Richards with L1&L2; 3=age_specific_K; 4=not implemented
-2 #_Age(post-settlement)_for_L1;linear growth below this
+1 #_Age(post-settlement)_for_L1;linear growth below this
 999 #_Growth_Age_for_L2 (999 to use as Linf)
 0.055 #_exponential decay for growth above maxage (fixed at 0.2 in 3.24; value should approx initial Z; -999 replicates 3.24)
 0  #_placeholder for future growth feature
@@ -57,7 +57,7 @@
  0.32 0.37 0.33 0.3 0.2 3 -2 0 0 0 0 0 0 0 # NatM_p_1_Fem_GP_1
  20 25 30 30 5 0 -2 0 0 0 0 0 0 0 # L_at_Amin_Fem_GP_1
  60 75 65 65 5 0 -2 0 0 0 0 0 0 0 # L_at_Amax_Fem_GP_1
- 0.1 0.2 0.15 0.25 0.8 0 -3 0 0 0 0 0 0 0 # VonBert_K_Fem_GP_1
+ 0.1 0.2 0.2 0.25 0.8 0 -3 0 0 0 0 0 0 0 # VonBert_K_Fem_GP_1
  0.05 0.2 0.063 0.1 0.8 0 -3 0 0 0 0 0 0 0 # CV_young_Fem_GP_1
  0.05 0.2 0.085 0.1 0.8 0 -3 0 0 0 0 0 0 0 # CV_old_Fem_GP_1
  1.7e-05 1.9e-05 1.8e-05 1.8e-05 0.5 0 3 0 0 0 0 0 0 0 # Wtlen_1_Fem_GP_1
