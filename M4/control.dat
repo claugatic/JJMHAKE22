@@ -11,7 +11,7 @@
 #_Cond 1 #_Morph_between/within_stdev_ratio (no read if N_morphs=1)
 #_Cond  1 #vector_Morphdist_(-1_in_first_val_gives_normal_approx)
 #
-2 # recr_dist_method for parameters:  2=main effects for GP, Area, Settle timing; 3=each Settle entity
+4 # recr_dist_method for parameters:  2=main effects for GP, Area, Settle timing; 3=each Settle entity
 1 # not yet implemented; Future usage: Spawner-Recruitment: 1=global; 2=by area
 1 #  number of recruitment settlement assignments 
 0 # unused option
@@ -55,21 +55,21 @@
 #_growth_parms
 #_ LO HI INIT PRIOR PR_SD PR_type PHASE env_var&link dev_link dev_minyr dev_maxyr dev_PH Block Block_Fxn
  0.32 0.37 0.33 0.3 0.2 3 -2 0 0 0 0 0 0 0 # NatM_p_1_Fem_GP_1
- 20 25 30 30 5 0 -2 0 0 0 0 0 0 0 # L_at_Amin_Fem_GP_1
+ 20 35 30 30 5 0 -2 0 0 0 0 0 0 0 # L_at_Amin_Fem_GP_1
  60 75 65 65 5 0 -2 0 0 0 0 0 0 0 # L_at_Amax_Fem_GP_1
- 0.1 0.2 0.2 0.25 0.8 0 3 0 0 0 0 0 0 0 # VonBert_K_Fem_GP_1
+ 0.1 0.3 0.2 0.25 0.8 0 3 0 0 0 0 0 0 0 # VonBert_K_Fem_GP_1
  0.05 0.2 0.063 0.1 0.8 0 -3 0 0 0 0 0 0 0 # CV_young_Fem_GP_1
  0.05 0.2 0.085 0.1 0.8 0 -3 0 0 0 0 0 0 0 # CV_old_Fem_GP_1
- 1.7e-05 1.9e-05 1.8e-05 1.8e-05 0.5 0 3 0 0 0 0 0 0 0 # Wtlen_1_Fem_GP_1
- 2.7 2.8 2.79999 2.75 1 0 3 0 0 0 0 0 0 0 # Wtlen_2_Fem_GP_1
+ 1.7e-05 1.9e-05 1.8e-05 1.8e-05 0.5 0 -3 0 0 0 0 0 0 0 # Wtlen_1_Fem_GP_1
+ 2.7 2.8 2.79999 2.75 1 0 -3 0 0 0 0 0 0 0 # Wtlen_2_Fem_GP_1
  33 40 35 37 0.8 0 -3 0 0 0 0 0 0 0 # Mat50%_Fem_GP_1
  -47 -45 -46.9 -46.9 0.8 0 -3 0 0 0 0 0 0 0 # Mat_slope_Fem_GP_1
  -3 3 1 1 0.8 0 -3 0 0 0 0 0 0 0 # Eggs_scalar_Fem_GP_1
  -3 3 0 0 0.8 0 -3 0 0 0 0 0 0 0 # Eggs_exp_len_Fem_GP_1
- 0 0 0 0 0 0 -4 0 0 0 0 0 0 0 # RecrDist_GP_1
- 0 0 0 0 0 0 -4 0 0 0 0 0 0 0 # RecrDist_Area_1
- 0 0 0 0 0 0 -4 0 0 0 0 0 0 0 # RecrDist_month_1
- 1 1 1 1 1 0 -1 0 0 0 0 0 0 0 # CohortGrowDev
+# 0 0 0 0 0 0 -4 0 0 0 0 0 0 0 # RecrDist_GP_1
+# 0 0 0 0 0 0 -4 0 0 0 0 0 0 0 # RecrDist_Area_1
+# 0 0 0 0 0 0 -4 0 0 0 0 0 0 0 # RecrDist_month_1
+ 1 1 0 1 1 0 -1 0 0 0 0 0 0 0 # CohortGrowDev
  0.01 0.99 0.5 0.5 0 0 -4 0 0 0 0 0 0 0 # FracFemale_GP_1
 #
 #_no timevary MG parameters
