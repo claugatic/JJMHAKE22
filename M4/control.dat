@@ -201,9 +201,9 @@
           0.01             6       4.10238           0.2            99             0          2          0          0          0          0        0.5          2          0  #  AgeSel_P1_Industrial_declarado(1)
           0.01             6       1.66251           1.8            99             0          2          0          0          0          0        0.5          2          0  #  AgeSel_P2_Industrial_declarado(1)
           0.01             6       4.93391           0.2            99             0          2          0          0          0          0        0.5          2          0  #  AgeSel_P1_Artesanal_declarado(2)
-          0.01             6       1.80304           1.8            99             0          2          0          0          0          0        0.5          2          0  #  AgeSel_P2_Artesanal_declarado(2)
+          0.01             6       1.51282           1.8            99             0         -2          0          0          0          0        0.5          2          0  #  AgeSel_P2_Artesanal_declarado(2)
           0.01             6       1.99867           0.2            99             0          2          0          0          0          0        0.5          2          0  #  AgeSel_P1_Crucero(3)
-          0.01             6     0.0120564           1.8            99             0          2          0          0          0          0        0.5          2          0  #  AgeSel_P2_Crucero(3)
+          0.01             6       0.03529           1.8            99             0         -2          0          0          0          0        0.5          2          0  #  AgeSel_P2_Crucero(3)
 # timevary selex parameters 
 #_          LO            HI          INIT         PRIOR         PR_SD       PR_type    PHASE  #  parm_name
       -6.03972      0.357211      -0.24688             0      0.178605             6      4  # AgeSel_P1_Industrial_declarado(1)_BLK2mult_2003
